@@ -6,8 +6,8 @@ namespace SalesWebMvc.Models
 {
     public class Department
     {
-        public int id { get; set; }
-        public string name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
 
         public Department()
@@ -16,8 +16,8 @@ namespace SalesWebMvc.Models
 
         public Department(int id, string name)
         {
-            this.id = id;
-            this.name = name;
+            this.Id = id;
+            this.Name = name;
         }
         public void AddSaller(Seller seller)
         {
